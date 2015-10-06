@@ -93,6 +93,7 @@ if(isset($_POST['add_cron'])) {
 <input type="text" name="remove_cron" size="100" placeholder="e.g.: * * * * * /usr/local/bin/php -q /home/username/public_html/my_cron.php"><br>
 <input type="checkbox" name="remove_all_cron" value="1"> Remove all cron jobs?<br>
 
+<?
 echo "ENABLE PLUGIN: ";
 
 if($ENABLED == "on" || $ENABLED == 1) {
