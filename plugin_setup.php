@@ -24,6 +24,13 @@ $sequenceExtension = ".fseq";
 logEntry("plugin update file: ".$pluginUpdateFile);
 
 
+if(isset($_POST['updatePlugin']))
+{
+	logEntry("updating plugin...");
+	$updateResult = updatePluginFromGitHub($gitURL, $branch="master", $pluginName);
+
+	echo $updateResult."<br/> \n";
+}
 
 if($DEBUG) {
 
