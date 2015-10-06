@@ -24,8 +24,6 @@ $sequenceExtension = ".fseq";
 logEntry("plugin update file: ".$pluginUpdateFile);
 
 
-$ENABLED=$_POST["ENABLED"];
-
 
 if($DEBUG) {
 
@@ -91,20 +89,7 @@ if(isset($_POST['add_cron'])) {
 <input type="text" name="remove_cron" size="100" placeholder="e.g.: * * * * * /usr/local/bin/php -q /home/username/public_html/my_cron.php"><br>
 <input type="checkbox" name="remove_all_cron" value="1"> Remove all cron jobs?<br>
 
-<?
-echo "ENABLE PLUGIN: ";
 
-if($ENABLED == "on" || $ENABLED == 1) {
-		echo "<input type=\"checkbox\" checked name=\"ENABLED\"> \n";
-//PrintSettingCheckbox("Radio Station", "ENABLED", $restart = 0, $reboot = 0, "ON", "OFF", $pluginName = $pluginName, $callbackName = "");
-	} else {
-		echo "<input type=\"checkbox\"  name=\"ENABLED\"> \n";
-}
-
-
-echo "<p/> \n";
-
-?>
 <p/>
 <input id="submit_button" name="submit" type="submit" class="buttons" value="Save Config">
 <p/>
