@@ -91,7 +91,7 @@ if(isset($_POST['add_cron'])) {
 
 
 <p/>
-<input id="submit_button" name="submit" type="submit" class="buttons" value="Save Config">
+<input id="submit_button" name="submit" type="submit" class="buttons" value="Submit">
 <p/>
 <?
 
