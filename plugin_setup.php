@@ -36,7 +36,10 @@ if($DEBUG) {
 	
 }
 
+$output = shell_exec('crontab -l');
 
+
+echo $output;
 if(isset($_POST['submit']))
 {
 
