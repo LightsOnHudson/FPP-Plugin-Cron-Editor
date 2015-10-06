@@ -95,12 +95,12 @@ if(isset($_POST['add_cron'])) {
 <p/>
 <?
 
+
  if(file_exists($pluginUpdateFile))
  {
  	//echo "updating plugin included";
 	include $pluginUpdateFile;
 }
-
 ?>
 <p>To report a bug, please file it against <?php echo $gitURL;?>
 </form>
