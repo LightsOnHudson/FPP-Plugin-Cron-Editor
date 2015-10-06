@@ -82,7 +82,7 @@ if(isset($_POST['add_cron'])) {
 ?>
 <b>Current Cron Jobs:</b><br>
 
-<?
+
 <?php echo nl2br($output); ?>
 
 <h2>Add or Remove Cron Job</h2>
