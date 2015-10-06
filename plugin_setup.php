@@ -1,21 +1,27 @@
 <?php
-//$DEBUG=true;
-//include_once "/opt/fpp/www/common.php";
+$skipJSsettings = 1;
+//include_once '/opt/fpp/www/config.php';
+include_once '/opt/fpp/www/common.php';
 
 $pluginName = "CronEditor";
-include_once "functions.inc.php";
-include_once "commonFunctions.inc.php";
-//include "config/config.inc";
 
 $pluginUpdateFile = $settings['pluginDirectory']."/".$pluginName."/"."pluginUpdate.inc";
-$logFile = $settings['logDirectory']."/".$pluginName.".log";
+
+
+include_once 'functions.inc.php';
+include_once 'commonFunctions.inc.php';
+
 $myPid = getmypid();
 
 $gitURL = "https://github.com/LightsOnHudson/FPP-Plugin-Cron-Editor.git";
 
-logEntry("plugin update file: ".$pluginUpdateFile);
+//arg0 is  the program
+//arg1 is the first argument in the registration this will be --list
+//$DEBUG=true;
+$logFile = $settings['logDirectory']."/".$pluginName.".log";
+$sequenceExtension = ".fseq";
 
-$DEBUG = false;
+logEntry("plugin update file: ".$pluginUpdateFile);
 
 $IP=trim($_POST["IP"]);
 $PORT=trim($_POST["PORT"]);
