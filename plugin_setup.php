@@ -49,7 +49,7 @@ if($DEBUG) {
 
 <p>Known Issues:
 <ul>
-<li>None known</ul>
+<li>A refresh may add duplicate entries. Be careful only press Submit Once and then leave the screen and enter again</ul>
 
 <p>Configuration:
 <ul>
