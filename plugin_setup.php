@@ -100,12 +100,18 @@ if($ENABLED == "on" || $ENABLED == 1) {
 
 echo "<p/> \n";
 
+?>
+<p/>
+<input id="submit_button" name="submit" type="submit" class="buttons" value="Save Config">
+<p/>
+<?
 
  if(file_exists($pluginUpdateFile))
  {
  	//echo "updating plugin included";
 	include $pluginUpdateFile;
 }
+
 ?>
 <p>To report a bug, please file it against <?php echo $gitURL;?>
 </form>
