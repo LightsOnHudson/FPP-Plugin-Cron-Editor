@@ -5,7 +5,7 @@
 $pluginName = "CronEditor";
 include_once "functions.inc.php";
 include_once "commonFunctions.inc.php";
-include "config/config.inc";
+//include "config/config.inc";
 
 $pluginUpdateFile = $settings['pluginDirectory']."/".$pluginName."/"."pluginUpdate.inc";
 $logFile = $settings['logDirectory']."/".$pluginName.".log";
