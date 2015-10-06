@@ -2,7 +2,7 @@
 //$DEBUG=true;
 //include_once "/opt/fpp/www/common.php";
 
-$pluginName = "BetaBrite";
+$pluginName = "CronEditor";
 include_once "functions.inc.php";
 include_once "commonFunctions.inc.php";
 include "config/config.inc";
@@ -11,7 +11,7 @@ $pluginUpdateFile = $settings['pluginDirectory']."/".$pluginName."/"."pluginUpda
 $logFile = $settings['logDirectory']."/".$pluginName.".log";
 $myPid = getmypid();
 
-$gitURL = "https://github.com/LightsOnHudson/FPP-Plugin-BetaBrite.git";
+$gitURL = "https://github.com/LightsOnHudson/FPP-Plugin-Cron-Editor.git";
 
 logEntry("plugin update file: ".$pluginUpdateFile);
 
