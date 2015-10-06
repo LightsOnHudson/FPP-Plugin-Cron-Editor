@@ -74,9 +74,7 @@ if(isset($_POST['add_cron'])) {
 		echo exec("crontab $cron_file");
 
 	}
-	$uri = $_SERVER['REQUEST_URI'];
-	header("Location: $uri");
-	exit;
+	
 
 }
 ?>
