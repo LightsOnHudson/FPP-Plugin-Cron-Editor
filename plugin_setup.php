@@ -23,18 +23,9 @@ $sequenceExtension = ".fseq";
 
 logEntry("plugin update file: ".$pluginUpdateFile);
 
-$IP=trim($_POST["IP"]);
-$PORT=trim($_POST["PORT"]);
-$STATION_ID=trim($_POST["STATION_ID"]);
-$DEVICE=trim($_POST["DEVICE"]);
-$DEVICE_CONNECTION_TYPE=trim($_POST["DEVICE_CONNECTION_TYPE"]);
-$COLOR=trim($_POST["COLOR"]);
-$STATIC_TEXT_POST=trim($_POST["STATIC_TEXT_POST"]);
-$STATIC_TEXT_PRE=trim($_POST["STATIC_TEXT_PRE"]);
+
 $ENABLED=$_POST["ENABLED"];
-$LOOPMESSAGE=$_POST["LOOPMESSAGE"];
-$LOOPTIME=$_POST["LOOPTIME"];
-$SEPARATOR = $_POST["SEPARATOR"];
+
 
 if($DEBUG) {
 
@@ -43,6 +34,11 @@ if($DEBUG) {
 }
 
 $output = shell_exec('crontab -l');
+
+$cronResult = exec('/usr/bin/crontab -l',$outputResult);
+
+logEntry($cronResult[0]);
+
 
 
 echo $output;
