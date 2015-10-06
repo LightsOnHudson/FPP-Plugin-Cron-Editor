@@ -32,7 +32,7 @@ if($DEBUG) {
 	
 	
 }
-
+?>
 
 <html>
 <head>
