@@ -89,7 +89,7 @@ if(isset($_POST['add_cron'])) {
 <?php echo nl2br($output); ?>
 
 <h2>Add or Remove Cron Job</h2>
-<form method="post" action="<?php $_SERVER['REQUEST_URI']; ?>">
+<form method="post" action="<?php $_SERVER['SERVER_ADDR']; ?>">
 <b>Add New Cron Job:</b><br>
 <input type="text" name="add_cron" size="100" placeholder="e.g.: * * * * * /usr/local/bin/php -q /home/username/public_html/my_cron.php"><br>
 <b>Remove Cron Job:</b><br>
