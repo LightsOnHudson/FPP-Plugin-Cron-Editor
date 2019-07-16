@@ -4,7 +4,7 @@ $skipJSsettings = 1;
 include_once '/opt/fpp/www/common.php';
 
 //$pluginName = "CronEditor";
-$pluginName = basename(dirname(__FILE__));  //pjd 7-14-2019   added per dkulp
+$pluginName = basename(dirname(__FILE__));  //pjd 7-10-2019   added per dkulp
 
 $pluginUpdateFile = $settings['pluginDirectory']."/".$pluginName."/"."pluginUpdate.inc";
 
